@@ -191,6 +191,7 @@ function init_calcula2000(){
 	place_button("IMG_CALC_BTN4", 288, num_btn_y_row1);
 	place_button("IMG_CALC_BTN5", 410, num_btn_y_row1);
 	place_button("IMG_CALC_BTN6", 480, num_btn_y_row1);
+	
 	//row 2
 	place_button("IMG_CALC_BTN7", 60, num_btn_y_row2);
 	place_button("IMG_CALC_BTN8", 152, num_btn_y_row2);
@@ -198,6 +199,7 @@ function init_calcula2000(){
 	place_button("IMG_CALC_BTN10", 288, num_btn_y_row2);
 	place_button("IMG_CALC_BTN11", 410, num_btn_y_row2);
 	place_button("IMG_CALC_BTN12", 480, num_btn_y_row2);
+	
 	//row 3
 	place_button("IMG_CALC_BTN13", 60, num_btn_y_row3);
 	place_button("IMG_CALC_BTN14", 152, num_btn_y_row3);
@@ -205,6 +207,7 @@ function init_calcula2000(){
 	place_button("IMG_CALC_BTN16", 288, num_btn_y_row3);
 	place_button("IMG_CALC_BTN17", 410, num_btn_y_row3);
 	place_button("IMG_CALC_BTN18", 480, num_btn_y_row3);
+	
 	//row 4 (last)
 	place_button("IMG_CALC_BTN19", 60, num_btn_y_row4);
 	place_button("IMG_CALC_BTN20", 152, num_btn_y_row4);
@@ -220,116 +223,139 @@ function init_calcula2000(){
 		return_output("Ms. " + arr_character_names[Math.ceil(Math.random()*arr_character_names.length)-1]);
 		snd_calculator_click();
 	});
+	
 	//7
 	document.getElementById("IMG_CALC_BTN2").addEventListener('click', function(){
 		handleNumberCalculation("Seven!", "7");
 		snd_calculator_click();
 	});
+	
 	//8
 	document.getElementById("IMG_CALC_BTN3").addEventListener('click', function(){
 		handleNumberCalculation("Eight??", "8");
 		snd_calculator_click();
 	});
+	
 	//9
 	document.getElementById("IMG_CALC_BTN4").addEventListener('click', function(){
 		handleNumberCalculation("Nine", "9");
 		snd_calculator_click();
 	});
+	
 	//divide
 	document.getElementById("IMG_CALC_BTN5").addEventListener('click', function(){
 		handleNumberCalculation("Division", "/");
 		snd_calculator_click();
 	});
+	
 	//#
 	document.getElementById("IMG_CALC_BTN6").addEventListener('click', function(){
 		handleNumberCalculation("HASHTAG", "#hashtag");
 		snd_calculator_click();
 	});
+	
 	//MR
 	document.getElementById("IMG_CALC_BTN7").addEventListener('click', function(){
 		return_output("Mister " + arr_character_names[Math.ceil(Math.random()*arr_character_names.length)-1]);
 		snd_calculator_click();
 	});
+	
 	//4
 	document.getElementById("IMG_CALC_BTN8").addEventListener('click', function(){
 		handleNumberCalculation("Four!?", "4");
 		snd_calculator_click();
 	});
+	
 	//5
 	document.getElementById("IMG_CALC_BTN9").addEventListener('click', function(){
 		handleNumberCalculation("Five!", "5");
 		snd_calculator_click();
 	});
+	
 	//6
 	document.getElementById("IMG_CALC_BTN10").addEventListener('click', function(){
 		handleNumberCalculation("Six.", "6");
 		snd_calculator_click();
 	});
+	
 	//*
 	document.getElementById("IMG_CALC_BTN11").addEventListener('click', function(){
 		handleNumberCalculation("Multiplication", "*");
 		snd_calculator_click();
 	});
+	
 	//%
 	document.getElementById("IMG_CALC_BTN12").addEventListener('click', function(){
 		handleNumberCalculation("Percent", "%");
 		snd_calculator_click();
 	});
+	
 	//M+
 	document.getElementById("IMG_CALC_BTN13").addEventListener('click', function(){
 		return_output("Increase maturity by 1");
 		snd_calculator_click();
 	});
+	
 	//1
 	document.getElementById("IMG_CALC_BTN14").addEventListener('click', function(){
 		handleNumberCalculation("ONE!!", "1");
 		snd_calculator_click();
 	});
+	
 	//2
 	document.getElementById("IMG_CALC_BTN15").addEventListener('click', function(){
 		handleNumberCalculation("Too!", "2");
 		snd_calculator_click();
 	});
+	
 	//3
 	document.getElementById("IMG_CALC_BTN16").addEventListener('click', function(){
 		handleNumberCalculation("Three.", "3");
 		snd_calculator_click();
 	});
+	
 	//-
 	document.getElementById("IMG_CALC_BTN17").addEventListener('click', function(){
 		handleNumberCalculation("Subtraction", "-");
 		snd_calculator_click();
 	});
+	
 	//CLEAR
 	document.getElementById("IMG_CALC_BTN18").addEventListener('click', function(){
 		return_output("MATH!")
 		snd_calculator_click();
 	});
+	
 	//M-
 	document.getElementById("IMG_CALC_BTN19").addEventListener('click', function(){
 		return_output("Decrease maturity by 1");
 		snd_calculator_click();
 	});
+	
 	//0
 	document.getElementById("IMG_CALC_BTN20").addEventListener('click', function(){
 		handleNumberCalculation("NUMBER NOTHING", "0");
 		snd_calculator_click();
 	});
+	
 	//.
 	document.getElementById("IMG_CALC_BTN21").addEventListener('click', function(){
 		handleNumberCalculation("Period.", ".");
 		snd_calculator_click();
 	});
+	
 	//+-
 	document.getElementById("IMG_CALC_BTN22").addEventListener('click', function(){
 		handleNumberCalculation("Give or take...", "+-");
 		snd_calculator_click();
 	});
+	
 	//+
 	document.getElementById("IMG_CALC_BTN23").addEventListener('click', function(){
 		handleNumberCalculation("Addition", "+");
 		snd_calculator_click();
 	});
+	
 	//RETURN STATE-OF-THE-ART MATHS!
 	document.getElementById("IMG_CALC_BTN24").addEventListener('click', function(){
 		//
